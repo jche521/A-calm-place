@@ -1,0 +1,128 @@
+/*import sub-css file*/
+@import "_menu.css";
+@import "_config.css";
+@import "_activity.css";
+@import "_content.css";
+
+/*import font style*/
+@font-face {
+  font-family: "colaborate thin";
+  src: url(font/colabthi-webfont.eot) format("eot");
+  src: url(font/colabthi-webfont.ttf) format("ttf");
+  src: url(font/colabthi-webfont.woff) format("woff");
+  src: url(font/colabthi-webfont.woff2) format("woff2");
+  src: url(font/colabthi-webfont.svg) format("svg");
+}
+
+/*general settings*/
+* {
+  box-sizing: border-box;
+}
+
+/*layer for colour adjustment*/
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(#e2ccc6, 10);
+  z-index: -1;
+}
+
+/*body sesction in html*/
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "colaborate thin";
+  background: #ffffff;
+  overflow: auto;
+}
+
+/*menu section*/
+header {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+  width: 100%;
+  margin: 1rem;
+}
+
+/*heading container for all webpages*/
+.heading-container {
+  display: grid;
+  width: auto;
+  text-align: center;
+  align-content: center;
+}
+
+/*all text*/
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #6bb6bc;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #6bb6bc;
+  font-size: 15px;
+  text-shadow: 0.5px 0.5px 0.5px#077b88;
+}
+
+/*specifically for the main and sub-heading in specific pages*/
+.main-heading {
+  margin: 1rem;
+  padding: 0;
+  text-shadow: 2px 2px 2px #077b88;
+}
+
+.sub-heading {
+  margin: 0;
+  padding: 0.4rem 0;
+  text-shadow: 1px 1px 1px #077b88;
+}
+
+/*all links to webpages*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*when mouse hovers the link*/
+a:hover {
+  color: #a5d1e1;
+}
+
+/*dot active for slide in content pages*/
+.active {
+  background-color: #6bb6bc;
+}
+
+/*list within pargraphs*/
+ul,
+li {
+  color: #6bb6bc;
+  text-shadow: 0.5px 0.5px #077b88;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/*heading ofr home page*/
+#home-heading {
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: -50px;
+  top: 50%;
+  width: 100%;
+  height: 100px;
+}

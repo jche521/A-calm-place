@@ -1,0 +1,245 @@
+/*Slideshow box for overall content*/
+#slideshow-box {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/*hide paragraphs by default*/
+.slides {
+  display: none;
+  position: relative;
+}
+
+/*set background box of each slide*/
+.content-box {
+  position: absolute;
+  max-height: auto;
+  background-color: rgba(253, 254, 255, 0.6);
+  z-index: -1;
+  overflow: auto;
+}
+
+/*set the two arrows for next and previouos button*/
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 40vh;
+  width: auto;
+  padding: 10px;
+  margin: 1em;
+  font-weight: bold;
+  color: #077b88;
+  z-index: 1;
+}
+
+/*make the next button at the right side*/
+.next {
+  right: 0px;
+}
+
+/*paragraphs within the content box*/
+.paragraph {
+  color: #6bb6bc;
+  text-shadow: 0.5px 0.5px #077b88;
+  z-index: 1;
+  text-align: justify;
+}
+
+/*page indicator*/
+.numbertext {
+  position: absolute;
+  color: #077b88;
+  font-weight: bolder;
+  margin: 0;
+  z-index: 1;
+}
+
+/*dots position and overall setting*/
+.dot-container {
+  position: absolute;
+  width: 220px;
+  left: 50%;
+  margin-left: -100px;
+  top: 70vh;
+  z-index: 1;
+  text-align: center;
+}
+
+/*dots setting*/
+.dot {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #077b88;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: #a5d1e1;
+}
+
+.content-heading {
+  padding: 0;
+  text-shadow: 1px 1px 1px #077b88;
+}
+
+/*for large screen (widescreens)*/
+@media screen and (min-width: 1190px) {
+  /*adjust contentbox for contents*/
+  .content-box {
+    min-height: 75vh;
+    width: 80%;
+    margin: 2% 10% 3% 10%;
+  }
+
+  /*set the two arrows for next and previouos button*/
+  .prev,
+  .next {
+    font-size: 50px;
+  }
+
+  /*make the next button at the right side*/
+  .next {
+    right: 0px;
+  }
+
+  /*paragraphs within the content box*/
+  .paragraph {
+    font-size: 25px;
+    padding: 2em;
+  }
+
+  /*page indicator*/
+  .numbertext {
+    top: -20px;
+    left: 200px;
+    font-size: 2em;
+  }
+
+  /*dots position and overall setting*/
+  .dot-container {
+    top: 130px;
+  }
+
+  /*dots setting*/
+  .dot {
+    height: 18px;
+    width: 18px;
+    margin: 0 4px;
+  }
+
+  /*content heading setting*/
+  .content-heading {
+    font-size: 55px;
+    margin: 30px 0 20px 0;
+  }
+}
+
+/*for medium screen (tablets & Small Laptops)*/
+@media screen and (min-width: 711px) and (max-width: 1189px) {
+  /*adjust contentbox for contents*/
+  .content-box {
+    min-height: 75vh;
+    width: 80%;
+    margin: 2% 10% 3% 10%;
+  }
+
+  /*set the two arrows for next and previouos button*/
+  .prev,
+  .next {
+    font-size: 40px;
+  }
+
+  /*make the next button at the right side*/
+  .next {
+    right: 0px;
+  }
+
+  /*paragraphs within the content box*/
+  .paragraph {
+    font-size: 25px;
+    padding: 30px;
+  }
+
+  /*page indicator*/
+  .numbertext {
+    top: -10px;
+    left: 150px;
+    font-size: 1.2em;
+  }
+
+  /*dots position and overall setting*/
+  .dot-container {
+    top: 95px;
+  }
+
+  /*dots setting*/
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+  }
+
+  /*content heading setting*/
+  .content-heading {
+    font-size: 40px;
+    margin: 0.7em 0 0.3em 0;
+  }
+}
+
+/*for small screen (Smartphones)*/
+@media screen and (max-width: 710px) {
+  /*adjust contentbox for contents*/
+  .content-box {
+    min-height: 75vh;
+    width: 85%;
+    margin: 7% 7.5% 3% 7.5%;
+  }
+
+  /*set the two arrows for next and previouos button*/
+  .prev,
+  .next {
+    font-size: 20px;
+  }
+
+  /*make the next button at the right side*/
+  .next {
+    right: -20px;
+  }
+
+  .prev {
+    left: -20px;
+  }
+
+  /*paragraphs within the content box*/
+  .paragraph {
+    font-size: 12px;
+    padding: 1.5em;
+  }
+
+  /*page indicator*/
+  .numbertext {
+    top: 5px;
+    left: 30px;
+    font-size: 13px;
+  }
+
+  /*dots position and overall setting*/
+  .dot-container {
+    top: 85px;
+  }
+
+  /*dots setting*/
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 1px;
+  }
+
+  /*content heading setting*/
+  .content-heading {
+    font-size: 25px;
+    margin-top: 45px;
+  }
+}

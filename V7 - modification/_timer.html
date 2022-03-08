@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/3023/3023816.svg">
+    <title>Relaxing Timer</title>
+  </head>
+
+  <!--menu layout-->
+  <header>
+    <!--menu button-->
+    <div class="menu-btn">
+      <div class="btn-line" id="btn-line1"></div>
+      <div class="btn-line" id="btn-line2"></div>
+      <div class="btn-line" id="btn-line3"></div>
+    </div>
+
+    <!--menu-->
+    <nav class="menu">
+
+      <!--content menu-->
+      <div class="content-nav">
+        <!--content heading-->
+        <li class="nav-item" id="content-heading" >
+          Articles <hr>
+          </a>
+        </li>
+        <!--link to home page -->
+        <li class="nav-item">
+          <a href="index.html" class="nav-link1">  
+            Home
+          </a>
+        </li>
+        <!--link to contentWhat page -->
+        <li class="nav-item">
+          <a href="_contentWhat.html" class="nav-link1">
+            About Stress
+          </a>
+        </li>
+        <!--link to contentHow page-->
+        <li class="nav-item">
+          <a href="_contentHow.html" class="nav-link1">
+            Handle Stress
+          </a>
+        </li>
+      </div>
+
+      <!--activity menu-->
+      <div class="activity-nav">
+        <!--activity heading-->
+        <li class="nav-item2" id="activity-heading" >
+          Activity <hr>
+          </a>
+        </li>     
+        <!--link to relaxer page-->
+        <li class="nav-item2">
+          <a href="_relaxer.html" class="nav-link2">
+            Relaxer
+          </a>
+        </li>
+        <!--link to acitivity page-->
+        <li class="nav-item2">
+          <a href="_timer.html" class="nav-link2">
+            Relaxing Timer
+          </a>
+        </li>
+      </div>
+
+    </nav>
+  </header>
+
+  <!--insert background and formatting-->
+  <body style="background-image: url(resource/bg8.jpg) ; background-attachment: fixed; background-size: cover; z-index: -2;">
+
+    <!--headings-->
+    <div class="heading-container">
+      <h1 class = "activity-heading">Relaxing Timer</h1>
+      <p class = "activity-subheading">
+        Try to avoid using any electronic devices <br>  
+        Use headphone for better experience
+      </p>
+    </div>
+
+    <!--timer-->
+    <div id="timer-container">
+      <p id="time-left"></p>
+    </div>
+
+    <!--music reference-->
+    <div class="reference-container">
+      <p class="music-reference">
+        The Things That Keep Us Here by Scott Buckley https://soundcloud.com/scottbuckley <br>
+        Creative Commons — Attribution 3.0 Unported — CC BY 3.0 <br>
+        Free Download / Stream: http://bit.ly/things-that-keep-us <br>
+        Music promoted by Audio Library https://youtu.be/SUkUjsr1FqM <br>
+      </p>
+    </div>
+
+    <!--mute button-->
+    <button class="mute"></button>
+
+    <!--start and refresh button-->
+    <div class="button-container">
+      <button class="activity-btn" id="start-btn" >Start</button>
+      <button class="activity-btn" id= "refresh-btn" onclick="window.location.reload()">Refresh</button>
+    </div>
+
+  </body>
+
+  <!--js file-->
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/_timer.js"></script>
+</html>

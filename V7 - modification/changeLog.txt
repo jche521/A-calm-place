@@ -1,0 +1,20 @@
+8/14 modify css file for activity for responsiveness
+8/16 further modification for responsiveness 
+     media query using min max height
+
+8/17 add button for relaxer with relative settings 
+
+8/21 inform music playing in timer 
+
+8/23 repsonsiveness for main page, menu, menue button
+
+8/31 add icon for website
+
+9/01 add mute button for timer 
+
+9/02 styling of mute button 
+
+9/03 content box height sizing
+     next prev button move with page when scorlling
+
+repeat button in timer wont play music

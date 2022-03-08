@@ -1,0 +1,143 @@
+/*menu initial setting*/
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.95;
+  visibility: hidden;
+}
+
+/*when menu is opened (done by js)*/
+.menu.open {
+  visibility: visible;
+}
+
+/*two menu section open completely*/
+.content-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  overflow: hidden;
+
+  background: #a5d1e1;
+  width: 50%; /*the section of menu*/
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+.activity-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  overflow: hidden;
+
+  background: #e2ccc6;
+  width: 50%; /*the section of menu*/
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+
+/*setting for two menu headings*/
+#content-heading {
+  color: #fec9c9;
+  text-shadow: 1px 1px 2px #077b88;
+  font-size: 4vh;
+}
+
+#activity-heading {
+  color: #6bb6bc;
+  text-shadow: 1px 1px 2px #06525a;
+  font-size: 4vh;
+}
+
+/*styling for the menu items*/
+.nav-link1 {
+  color: #fec9c9;
+  text-shadow: 1px 1px 2px #077b88;
+  font-size: 3vh;
+  line-height: 2em;
+}
+
+.nav-link2 {
+  color: #6bb6bc;
+  text-shadow: 1px 1px 2px #06525a;
+  font-size: 3vh;
+  line-height: 2em;
+}
+
+/*transition when menu button is clicked*/
+.content-nav.open {
+  transform: translate3d(0, 0, 0);
+  transition: all 1s ease-out;
+}
+
+.activity-nav.open {
+  transform: translate3d(0, 0, 0);
+  transition: all 1s ease-out;
+}
+
+/*set initial position of nav-items and move out when click button*/
+.nav-item:nth-child(n) {
+  transform: translate3d(150%, 0, 0);
+  transition: all 2s ease-in-out;
+}
+
+.nav-item2:nth-child(n) {
+  transform: translate3d(-150%, 0, 0);
+  transition: all 2s ease-in-out;
+}
+
+.nav-item:nth-child(n).open {
+  transform: translate3d(0%, 0, 0);
+  transition: all 2s ease-in-out;
+}
+
+.nav-item2:nth-child(n).open {
+  transform: translate3d(0%, 0, 0);
+  transition: all 2s ease-in-out;
+}
+
+/*when screen width is smaller than height*/
+@media screen and (orientation: portrait) {
+  /*set the menu to be one under one, instead of side by side with transition*/
+  .content-nav {
+    float: top;
+    width: 100%;
+    height: 50vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .content-nav.open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .activity-nav {
+    float: bottom;
+    width: 100%;
+    height: 50vh;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .activity-nav.open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /*adjust the size of contentbox for contents*/
+  .content-box {
+    width: 90%;
+    margin: 2% 50% 3% 5%;
+  }
+}
